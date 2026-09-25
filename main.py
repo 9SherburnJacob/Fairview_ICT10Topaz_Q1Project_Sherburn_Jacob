@@ -17,22 +17,31 @@ def orderaccept(e):
     
     )
 
+    #Checks each box if it was clicked on then adds the value to the receipt, if not, then the value added remains 0.
+
     vat = subtotal * 0.12
 
-    output = f"""
-    ====Receipt====<br>
+    #Adds the tax to the total.
+
+    output = f""" 
+    ====Receipt====<br> 
     Subtotal: ₱{subtotal}<br>
     VAT: ₱{vat}<br>
     Total: ₱{subtotal + vat}<br>
     """
+    #Creates the receipt for the receipt generator.
 
     document.getElementById("textoutput").innerHTML = output
 
 def makeSKU(e):
     document.getElementById('SKUGEN').innerHTML = ""
-    cavar = document.getElementById('selection').value
+    cavar = document.getElementById('category').value
     navar = document.getElementById('name').value.strip()
     quvar = document.getElementById('quantity').value.strip()
     SKUname = prodCategory.upper() + "-" + prodName.upper + "-" + prodQty
 
+    #Gets the variable and it's value and uses it for the generator's receipt
+
     display("SKU: ", SKUname, target='SKUGEN')
+
+    #Displays the SKU generator receipts.

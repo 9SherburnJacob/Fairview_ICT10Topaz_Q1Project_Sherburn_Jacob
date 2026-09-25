@@ -5,30 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SKU Generator page</title>
     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css" />
     <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
     
+    <style>
+
+        header {
+
+            padding:10px;
+            background-color:rgb(71, 71, 83);
+        }
+
+    </style>
 </head>
 <body>
 
-    <a href="index.html">Coffee Shop Receipt</a>
+    <header>
+        <a href="index.html">Coffee Shop Receipt</a>
+    </header>
 
     <form action="">
 
         <h1>SKU Generator</h1>
 
-        <select type="select" id="selection">
-        <label for="selection" id="label">Category</label>
+        <select type="select" id="category">
+        <label for="category" id="labelc">Category</label>
 
         <br><br>
 
-        <select type="text" id="name">
-        <label for="name" id="label">Product Name</label>
+        <input type="text" id="name">
+        <label for="name" id="labeln">Product Name</label>
 
         <br><br>
 
-        <select type="number" id="quantity">
-        <label for="quantity" id="label">Stock Quantity</label>
+        <input type="number" id="quantity">
+        <label for="quantity" id="labelq">Stock Quantity</label>
         
         <br><br>
 
