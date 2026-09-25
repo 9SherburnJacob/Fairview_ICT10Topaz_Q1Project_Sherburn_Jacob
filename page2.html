@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKU Generator page</title>
+    
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+    
+</head>
+<body>
+
+    <a href="index.html">Coffee Shop Receipt</a>
+
+    <form action="">
+
+        <h1>SKU Generator</h1>
+
+        <select type="select" id="selection">
+        <label for="selection" id="label">Category</label>
+
+        <br><br>
+
+        <select type="text" id="name">
+        <label for="name" id="label">Product Name</label>
+
+        <br><br>
+
+        <select type="number" id="quantity">
+        <label for="quantity" id="label">Stock Quantity</label>
+        
+        <br><br>
+
+        <button type="button" py-click="makeSKU">Generate SKU</button>
+    </form>
+
+    <h1 id="SKUGEN"></h1>
+
+</body>
+</html>
