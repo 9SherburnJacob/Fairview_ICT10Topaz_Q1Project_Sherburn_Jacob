@@ -14,7 +14,6 @@ def orderaccept(e):
     +(float(sin.value) if sin.checked else 0.0)
     +(float(don.value) if don.checked else 0.0)
     +(float(meu.value) if meu.checked else 0.0)
-    
     )
 
     #Checks each box if it was clicked on then adds the value to the receipt, if not, then the value added remains 0.
@@ -38,7 +37,7 @@ def makeSKU(e):
     cavar = document.getElementById('category').value
     navar = document.getElementById('name').value.strip()
     quvar = document.getElementById('quantity').value.strip()
-    SKUname = prodCategory.upper() + "-" + prodName.upper + "-" + prodQty
+    SKUname = cavar.upper() + "-" + navar.upper()[:4] + "-" + quvar
 
     #Gets the variable and it's value and uses it for the generator's receipt
 
